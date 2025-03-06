@@ -4,3 +4,6 @@ title: "Nina Thoni bla"
 # logo: "/assets/img/profile.jpg"
 show_downloads: false
 
+# Include custom CSS
+include: ["assets/css/style.scss"]
+
