@@ -15,24 +15,25 @@
 
     {% include head-custom.html %}
 
-    <!-- Custom Styles to Adjust Sidebar & Expand Content -->
+    <!-- Custom Styles to Center & Expand Content -->
     <style>
       .wrapper {
           display: flex;
-          max-width: 1000px;
-          margin: 0 30px;;
+          max-width: 1200px;  /* Increased width */
+          margin: 0 auto;  /* Centers everything */
       }
 
       .sidebar {
-          flex: 0.25;  /* Makes the sidebar take up 25% of the width */
-          min-width: 250px;
+          flex: 0.2;  /* Makes the sidebar take up only 20% */
+          min-width: 200px;
           padding: 20px;
       }
 
       section {
-          flex: 0.75;  /* Makes the content take up 75% of the width */
+          flex: 0.8;  /* Makes the content take up 80% */
           padding: 20px;
-          max-width: 100%;
+          max-width: 900px;  /* Expands content width */
+          margin: 0 auto;  /* Centers the content */
       }
 
       .markdown-body {
@@ -93,9 +94,9 @@
 
     <footer>
       {% if site.github.is_project_page %}
-      <p>This project is maintained by 2 <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+      <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
       {% endif %}
-      <p><small>Hosted on GitHBub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      <p><small>Hosted on GitHubnina Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
     </footer>
 
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
