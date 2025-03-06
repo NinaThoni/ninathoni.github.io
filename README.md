@@ -4,16 +4,6 @@
 
 ---
 
-## **Education**  
-- **M.Sc., Data Science** | University of Westminster, London, UK (_2022_)  
-  - **Thesis:** *Time Series vs. Neural Networks for Stock Price Prediction*  
-  - Conducted a comparative analysis of **ARIMA vs. LSTM** for financial forecasting, evaluating **seasonality, trend analysis, and predictive accuracy**.  
-- **B.Sc., Production Engineering** | Universidade Federal Fluminense, Rio de Janeiro, BR (_2020_)  
-  - **Final Project:** *Vehicle Routing Problem Optimization using Genetic Algorithms*  
-  - Developed an **AI-driven routing solution**, comparing **Genetic Algorithms vs. Linear Programming** for efficiency and scalability.  
-
----
-
 ## **Work Experience**  
 
 ### **Lead Data Scientist @ Pogust Goodhead (_May 2023 - Jan 2025_)**  
@@ -35,6 +25,16 @@
 
 ### **Business Intelligence Intern @ Anheuser-Busch InBev (_Jan 2019 - Aug 2020_)**  
 - Analyzed **sales metrics (volume, market share, pricing)** using SQL & Power BI, supporting executive decision-making.  
+
+---
+
+## **Education**  
+- **M.Sc., Data Science** | University of Westminster, London, UK (_2022_)  
+  - **Thesis:** *Time Series vs. Neural Networks for Stock Price Prediction*  
+  - Conducted a comparative analysis of **ARIMA vs. LSTM** for financial forecasting, evaluating **seasonality, trend analysis, and predictive accuracy**.  
+- **B.Sc., Production Engineering** | Universidade Federal Fluminense, Rio de Janeiro, BR (_2020_)  
+  - **Final Project:** *Vehicle Routing Problem Optimization using Genetic Algorithms*  
+  - Developed an **AI-driven routing solution**, comparing **Genetic Algorithms vs. Linear Programming** for efficiency and scalability.  
 
 ---
 
