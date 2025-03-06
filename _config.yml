@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 title: "Nina Thoni"
 # description: "Portfolio showcasing AI, Data Science, and Full-Stack projects."
-logo: "/assets/img/profile-image.jpg"
+logo: /assets/img/image1.png
 show_downloads: false
 
