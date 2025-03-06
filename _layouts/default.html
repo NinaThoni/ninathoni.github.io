@@ -11,26 +11,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
-
-    <style>
-      .wrapper {
-        margin-right: 2000px;
-        margin-left: 500px;
-      } 
-
-      section{
-        display: flex;
-        flex-direction: column;
-        max-width: 800px;
-        width: 800px;
-      } 
-
-      header, footer {
-        left: 100px;
-      }
-
-    </style>
-
   </head>
   <body>
     <div class="wrapper">
@@ -64,6 +44,12 @@
       {{ content }}
 
       </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
