@@ -1,8 +1,7 @@
 theme: jekyll-theme-minimal
 title: "Nina Thoni blabla"
-description: "Portfolio showcasing AI, Data Science, and Full-Stack projects."
 # logo: "/assets/img/profile.jpg"  # Replace with your actual profile image path
-show_downloads: true  # Hide download buttons for a cleaner look
+show_downloads: False  # Hide download buttons for a cleaner look
 
 # Custom Styles
 include: ["assets/css/style.css"]
