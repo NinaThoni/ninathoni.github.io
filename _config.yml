@@ -1,9 +1,6 @@
 theme: jekyll-theme-minimal
-title: "Nina Thoni bla"
+title: "Nina Thoni bla2"
 # description: "Portfolio showcasing AI, Data Science, and Full-Stack projects."
 # logo: "/assets/img/profile.jpg"
 show_downloads: false
-
-# Include custom CSS
-include: ["assets/css/style.scss"]
 
