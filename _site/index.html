@@ -15,25 +15,29 @@
       }
       .tab-buttons {
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
+        width: 100%;
         margin-bottom: 20px;
-        flex-wrap: wrap;
       }
       .tab-link {
-        background-color: #f4f4f4;
+        flex: 1;
+        text-align: center;
+        padding: 12px;
         border: none;
-        padding: 10px 20px;
-        cursor: pointer;
+        background-color: #f0f0f0;
         font-weight: bold;
-        border-radius: 5px;
-        transition: background-color 0.3s;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-bottom 0.3s;
+        border-bottom: 5px solid transparent;
       }
       .tab-link:hover {
-        background-color: #e0e0e0;
+        background-color: #e6e6e6;
       }
       .tab-link.active {
         background-color: #0073b1;
         color: white;
+        border-bottom: 5px solid #005582;
       }
       .tab-content {
         display: none;
@@ -63,6 +67,8 @@
       section {
         width: 80%;
         max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
       }
     </style>
   </head>
@@ -70,7 +76,7 @@
     <div class="wrapper">
       <header>
         <h1><a href="/">Nina Thoni</a></h1>
-        <img src="/assets/img/profile_pic.png" alt="Profile Image" style="width: 150px; height: auto; border-radius: 50%;" />
+        <img src="/assets/img/image1.png" alt="Profile Image" style="width: 150px; height: auto; border-radius: 50%;" />
 
         <!-- Social Icons -->
         <div class="social-links">
@@ -87,9 +93,9 @@
 
         <div class="tab-container">
           <div class="tab-buttons">
-            <button class="tab-link active" onclick="openTab(event, 'experience')">Work Experience</button>
-            <button class="tab-link" onclick="openTab(event, 'projects')">Portfolio</button>
-            <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
+            <div class="tab-link active" onclick="openTab(event, 'experience')">Work Experience</div>
+            <div class="tab-link" onclick="openTab(event, 'projects')">Portfolio</div>
+            <div class="tab-link" onclick="openTab(event, 'education')">Education</div>
           </div>
 
           <div id="experience" class="tab-content" style="display: block;">
@@ -165,11 +171,12 @@
             <img class="project-img" src="/assets/img/digit_recognizer_app.png" alt="Digit Recognizer Preview">
             <p><strong>Mar 2025</strong> | <strong><a href="https://github.com/NinaThoni/digit-recognizer-app" target="_blank">GitHub Repo</a></strong></p>
             <ul>
-              <li>Developed a <strong>Flask API</strong> to recognize handwritten digits using a <strong>trained CNN model</strong>.</li>
-              <li>Enabled users to upload digit images and receive real-time predictions via the API.</li>
-              <li>Used <strong>Docker</strong> and <strong>Gunicorn</strong> for deployment, with <strong>unit tests</strong> for API endpoints.</li>
+              <li>Built an interactive <strong>Streamlit web app</strong> for digit recognition using a <strong>pre-trained CNN model</strong> on the MNIST dataset.</li>
+              <li>Users can draw digits in the browser and log predictions with true labels to a <strong>PostgreSQL database</strong>.</li>
+              <li>Deployed a fully containerized solution using <strong>Docker Compose</strong> on an <strong>Azure virtual machine</strong>.</li>
             </ul>
-            <p><strong>Tech Stack:</strong> Python, Flask, TensorFlow/Keras, Docker, Gunicorn, HTML, CSS</p>
+            <p><strong>Tech Stack:</strong> Python, PyTorch, Streamlit, PostgreSQL, Docker, Azure</p>
+            
 
             <h3><strong>Air Quality Chatbot - Full-Stack AI Application</strong></h3>
             <img class="project-img" src="/assets/img/air_quality_app.png" alt="Air Quality Chatbot Preview">
@@ -203,6 +210,52 @@
             </ul>
           </div>
         </div>
+      </section>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function openTab(evt, tabName) {
+        const tabContents = document.getElementsByClassName("tab-content");
+        const tabLinks = document.getElementsByClassName("tab-link");
+
+        for (let i = 0; i < tabContents.length; i++) {
+          tabContents[i].style.display = "none";
+        }
+
+        for (let i = 0; i < tabLinks.length; i++) {
+          tabLinks[i].classList.remove("active");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.classList.add("active");
+      }
+    </script>
+  </body>
+</html>        </div>
+      </section>
+    </div>
+
+    <script>
+      function openTab(evt, tabName) {
+        const tabContents = document.getElementsByClassName("tab-content");
+        const tabLinks = document.getElementsByClassName("tab-link");
+
+        for (let i = 0; i < tabContents.length; i++) {
+          tabContents[i].style.display = "none";
+        }
+
+        for (let i = 0; i < tabLinks.length; i++) {
+          tabLinks[i].classList.remove("active");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.classList.add("active");
+      }
+    </script>
+  </body>
+</html>        </div>
       </section>
     </div>
 
