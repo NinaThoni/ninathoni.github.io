@@ -56,7 +56,7 @@ Developed an **AI-driven solution** for optimizing delivery routes, comparing it
 ## **Personal Projects**  
 
 ### **Air Quality Chatbot - Full-Stack AI Application**  
-**Feb 2025** | **[Front-End GitHub Repo](#)** | **[Back-End GitHub Repo](#)**  
+**Feb 2025** | **[Front-End GitHub Repo](https://github.com/NinaThoni/air-quality-app)** | **[Back-End GitHub Repo](https://github.com/NinaThoni/data-pipeline)**  
 
   - Built a **React + FastAPI chatbot** that provides real-time **air quality insights** using **LLM (Mistral via Hugging Face API)**.  
   - Data is sourced from the **TfL API**, stored in **PostgreSQL (Aiven)**, and updated via **GitHub Actions**.  
