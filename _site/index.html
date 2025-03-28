@@ -79,6 +79,28 @@
 
     </style>
   </head>
+  
+  <script>
+    function openTab(evt, tabName) {
+      const tabContents = document.getElementsByClassName("tab-content");
+      const tabLinks = document.getElementsByClassName("tab-link");
+    
+      // Hide all content
+      for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+      }
+    
+      // Remove active class from all buttons
+      for (let i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active");
+      }
+    
+      // Show selected tab and activate its button
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.classList.add("active");
+    }
+    </script>
+    
   <body>
     <div class="wrapper">
       <header>
@@ -106,7 +128,7 @@
 
         
       </header>
-      <section>
+      <!-- <section>
 
       <h1 id="data-scientist">Data Scientist</h1>
 
@@ -220,7 +242,114 @@ Developed an <strong>AI-driven solution</strong> for optimizing delivery routes,
 🔗 <strong>GitHub:</strong> <a href="#">github.com/ninathoni</a></p>
 
 
-      </section>
+      </section> -->
+
+
+      <section>
+        <h1 id="data-scientist">Data Scientist</h1>
+
+<h4 id="technical-skills">
+  <strong>Technical Skills:</strong> Python, SQL, Azure, FastAPI, Llama3, React, GitHub Actions, Polars, PostgreSQL, Docker
+</h4>
+
+<hr />
+
+<!-- Tabs Start -->
+<div class="tab-container">
+  <div class="tab-buttons">
+    <button class="tab-link active" onclick="openTab(event, 'projects')">Personal Projects</button>
+    <button class="tab-link" onclick="openTab(event, 'experience')">Work Experience</button>
+    <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
+  </div>
+
+  <div id="projects" class="tab-content" style="display: block;">
+    <h3 id="air-quality-chatbot---full-stack-ai-application"><strong>Air Quality Chatbot - Full-Stack AI Application</strong></h3>
+<p><strong>Feb 2025</strong> | <strong><a href="#">Front-End GitHub Repo</a></strong> | <strong><a href="#">Back-End GitHub Repo</a></strong></p>
+
+<ul>
+  <li>Built a <strong>React + FastAPI chatbot</strong> that provides real-time <strong>air quality insights</strong> using <strong>LLM (Mistral via Hugging Face API)</strong>.</li>
+  <li>Data is sourced from the <strong>TfL API</strong>, stored in <strong>PostgreSQL (Aiven)</strong>, and updated via <strong>GitHub Actions</strong>.</li>
+  <li><strong>Deployed FastAPI on Azure App Service</strong> and <strong>React on Azure Static Web Apps</strong>.</li>
+</ul>
+
+<p><strong>Tech Stack:</strong> React, FastAPI, PostgreSQL, Azure, Ollama (LLM), TfL API, GitHub Actions, Bootstrap, Polars, Node.js</p>
+
+<hr />
+  </div>
+
+  <div id="experience" class="tab-content">
+    
+<h3 id="lead-data-scientist--pogust-goodhead-may-2023---jan-2025"><strong>Lead Data Scientist @ Pogust Goodhead (<em>May 2023 - Jan 2025</em>)</strong></h3>
+<ul>
+  <li>
+    <p>Led the development of <strong>Generative AI tools</strong> to streamline case management and lawyer productivity.</p>
+  </li>
+  <li>
+    <p>Designed <strong>AI-powered email &amp; document automation</strong> using <strong>RAG-based applications (Llama3)</strong>, integrated with <strong>Azure Functions, Power Automate, and Azure AI Search</strong>.</p>
+  </li>
+  <li>
+    <p>Built an <strong>LLM-driven classification system</strong> for legal expenses, automating <strong>150,000+ time entry categorizations</strong>, reducing operational costs.</p>
+  </li>
+</ul>
+
+<p><strong>Tech Stack:</strong> Llama3, RAG, Python, Azure AI Search, Azure Functions, Azure Blob Storage, Azure Databricks, Power Automate, CI/CD, PostgreSQL, Docker</p>
+
+<h3 id="data-scientist--artefact-jan-2022---may-2023"><strong>Data Scientist @ Artefact (<em>Jan 2022 - May 2023</em>)</strong></h3>
+<ul>
+  <li>
+    <p>Developed an <strong>ML pipeline</strong> in <strong>Azure Databricks</strong> to classify <strong>500,000+ Heineken retail locations</strong>, improving segmentation accuracy.</p>
+  </li>
+  <li>
+    <p>Designed <strong>FB Prophet-based forecasting models</strong> for audience size prediction, optimizing <strong>Sanofi’s paid media investments</strong>.</p>
+  </li>
+</ul>
+
+<p><strong>Tech Stack:</strong> Azure Databricks, MLflow, PySpark, Scikit-learn, FB Prophet, Python</p>
+
+<h3 id="data-analyst--keener-innovations-jan-2021---jul-2021"><strong>Data Analyst @ Keener Innovations (<em>Jan 2021 - Jul 2021</em>)</strong></h3>
+<ul>
+  <li>
+    <p>Built a <strong>cost management system</strong> that streamlined financial tracking, enhancing decision-making processes at the startup.</p>
+  </li>
+  <li>
+    <p>Contributed to HR initiatives by creating <strong>culture frameworks</strong>, bonus structures, and partnership programs to drive organizational alignment.</p>
+  </li>
+</ul>
+
+<h3 id="business-intelligence-intern--anheuser-busch-inbev-jan-2019---aug-2020"><strong>Business Intelligence Intern @ Anheuser-Busch InBev (<em>Jan 2019 - Aug 2020</em>)</strong></h3>
+<ul>
+  <li>Analyzed <strong>sales metrics (volume, market share, pricing)</strong> using SQL &amp; Power BI, supporting executive decision-making.</li>
+</ul>
+
+<hr />
+  </div>
+
+  <div id="education" class="tab-content">
+    <h3 id="msc-in-data-science-university-of-westminster-sep-2022">MSc in Data Science, University of Westminster (Sep 2022)</h3>
+<p><strong>Thesis Project: LSTM vs. ARIMA Model in Forecasting iShares Ibovespa Index Fund (BOVA11)</strong></p>
+<ul>
+  <li><strong>Developed forecasting models</strong> using <strong>Python</strong>, comparing classical time series methods against deep learning.</li>
+  <li><strong>Analyzed time series components</strong> (seasonality, trends) to optimize model performance.</li>
+  <li><strong>Evaluated model accuracy</strong> using RMSE and other forecasting metrics.</li>
+</ul>
+
+<h3 id="bsc-in-production-engineering-universidade-federal-fluminense-dec-2020">BSc in Production Engineering, Universidade Federal Fluminense (Dec 2020)</h3>
+
+<p><strong>Final Project: Vehicle Routing Problem Optimization with Genetic Algorithms</strong><br />
+Developed an <strong>AI-driven solution</strong> for optimizing delivery routes, comparing it to classical Linear Programming techniques.</p>
+<ul>
+  <li><strong>Implemented the Genetic Algorithm</strong> to improve vehicle routing efficiency.</li>
+  <li><strong>Compared AI-based vs. Linear Programming approaches</strong> to assess computational efficiency and solution quality.</li>
+  <li><strong>Used Python for modeling and simulation</strong>, applying real-world logistics data.</li>
+</ul>
+
+<hr />
+  </div>
+</div>
+
+
+
+
     </div>
     <script src="/assets/js/scale.fix.js"></script>
   </body>
