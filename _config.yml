@@ -3,4 +3,6 @@ title: "Nina Thoni"
 # description: "Portfolio showcasing AI, Data Science, and Full-Stack projects."
 logo: /assets/img/image1.png
 show_downloads: false
+plugins:
+  - jekyll-seo-tag
 
