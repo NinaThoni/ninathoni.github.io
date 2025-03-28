@@ -8,52 +8,12 @@
     
     {% seo %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '../assets/style/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
-    <style>
-      .social-links {
-          margin-top: 17px;
-          text-align: left;
-      }
-
-      .social-links a {
-          font-size: 26px;  /* Adjust icon size */
-          margin: 0 11px;
-          color: #333;  /* Dark grey */
-          transition: color 0.3s;
-      }
-
-      .social-links a:hover {
-          color: #0073b1; /* LinkedIn blue on hover */
-      }
-
-       header {
-        margin-left: -15px;
-      }  
-      /*
-      header {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center; 
-        text-align: center;
-        width: 100%;
-        padding: 20px 0;
-    }*/
-
-     
-      section {
-        max-width: 100%;
-        width: 80%;
-        display: block;
-        justify-content: center;
-        align-items: center; 
-      }
-
-    </style>
+    
   </head>
   <body>
     <div class="wrapper">

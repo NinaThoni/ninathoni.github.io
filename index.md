@@ -1,74 +1,9 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Nina Thoni</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Nina Thoni" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Nina Thoni" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Nina Thoni" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"Nina Thoni","name":"Nina Thoni","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/image1.png"}},"url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
+---
+layout: default
+title: Nina Thoni
+---
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/assets/style/style.css?v=d34771b2f88540f9b89b61576eda7d42b92e6dc2">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-    
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="http://localhost:4000/">Nina Thoni</a></h1>
-
-        
-          <img src="/assets/img/image1.png" alt="Profile Image" style="width: 150px; height: auto; border-radius: 50%;"  />
-        
-
-        <!-- Social Icons -->
-        <div class="social-links">
-          <a href="https://github.com/ninathoni" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/ninathoni" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:ninathoni3@gmail.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-
-
-        <p></p>
-
-        
-      </header>
-      <section>
-
-      <section>
+<section>
   <h1>Data Scientist</h1>
   <h4><strong>Technical Skills:</strong> Python, SQL, Azure, FastAPI, Llama3, React, GitHub Actions, Polars, PostgreSQL, Docker</h4>
   <hr />
@@ -156,7 +91,7 @@
         <li>Deployed a fully containerized solution using <strong>Docker Compose</strong> on an <strong>Azure virtual machine</strong>.</li>
     </ul>
     <p><strong>Tech Stack:</strong> Python, PyTorch, Streamlit, PostgreSQL, Docker, Azure</p>
-    <img class="project-img" src="/assets/img/digit_recognizer_app.png" alt="Digit Recognizer Preview" />
+    <img class="project-img" src="/assets/img/digit_recognizer_app.png" alt="Digit Recognizer Preview">
     
 
     <h2><strong>Air Quality Chatbot - Full-Stack AI Application</strong></h2>
@@ -167,7 +102,7 @@
         <li><strong>Deployed FastAPI on Azure App Service</strong> and <strong>React on Azure Static Web Apps</strong>.</li>
     </ul>
     <p><strong>Tech Stack:</strong> React, FastAPI, PostgreSQL, Azure, Ollama (LLM), TfL API, GitHub Actions, Bootstrap, Polars, Node.js</p>
-    <img class="project-img" src="/assets/img/air_quality_app.png" alt="Air Quality Chatbot Preview" />
+    <img class="project-img" src="/assets/img/air_quality_app.png" alt="Air Quality Chatbot Preview">
     </div>
 
     <div id="education" class="tab-content">
@@ -208,11 +143,3 @@
     evt.currentTarget.classList.add("active");
   }
 </script>
-</section>
-
-
-      </section>
-    </div>
-    <script src="/assets/js/scale.fix.js"></script>
-  </body>
-</html>
